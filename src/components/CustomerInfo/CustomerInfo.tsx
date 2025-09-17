@@ -1,6 +1,8 @@
+import React from 'react';
 import styles from './CustomerInfo.module.css';
+import type { CustomerInfoProps } from '../../types';
 
-const CustomerInfo = ({ paragraphs }) => {
+const CustomerInfo: React.FC<CustomerInfoProps> = ({ paragraphs }) => {
   return (
     <section className={styles.customerInfo}>
       <div className={styles.container}>

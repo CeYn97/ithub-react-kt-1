@@ -1,7 +1,9 @@
+import React from 'react';
 import styles from './Hero.module.css';
 import dino from '/dino.svg'
+import type { HeroProps } from '../../types';
 
-const Hero = ({ title, description, image }) => {
+const Hero: React.FC<HeroProps> = ({ title, description }) => {
   return (
     <section className={styles.hero}>
       <div className={styles.container}>

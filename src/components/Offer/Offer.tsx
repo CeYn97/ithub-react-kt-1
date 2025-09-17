@@ -1,7 +1,9 @@
+import React from 'react';
 import styles from './Offer.module.css';
 import offer from '/offer.png'
+import type { OfferProps } from '../../types';
 
-const WhatWeOffer = ({ title, description, image }) => {
+const Offer: React.FC<OfferProps> = ({ title, description }) => {
   return (
     <section className={styles.whatWeOffer}>
       <div className={styles.container}>
@@ -21,4 +23,4 @@ const WhatWeOffer = ({ title, description, image }) => {
   );
 };
 
-export default WhatWeOffer;
+export default Offer;

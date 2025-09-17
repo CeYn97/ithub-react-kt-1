@@ -1,6 +1,8 @@
+import React from 'react';
 import styles from './ServiceHighlights.module.css';
+import type { ServiceHighlightsProps } from '../../types';
 
-const ServiceHighlights = ({ services }) => {
+const ServiceHighlights: React.FC<ServiceHighlightsProps> = ({ services }) => {
   return (
     <section className={styles.serviceHighlights}>
       <div className={styles.container}>

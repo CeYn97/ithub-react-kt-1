@@ -1,0 +1,29 @@
+.customerInfo {
+  height: 600px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 800px;
+}
+
+.paragraph {
+  font-size: 16px;
+  color: #22356f;
+  font-family: "ABeeZee", sans-serif;
+  font-weight: 400;
+  line-height: 142%;
+  letter-spacing: 0.5%;
+}

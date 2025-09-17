@@ -1,7 +1,9 @@
+import React from 'react';
 import style from "./Header.module.css"
 import logoIcon from '/logo.svg'
+import type { HeaderProps } from '../../types';
 
-const Header = ({logo, navigation, contactButton}) => {
+const Header: React.FC<HeaderProps> = ({navigation, contactButton}) => {
     return (
         <header className={style.header}>
             <div className={style.container}>
@@ -17,7 +19,6 @@ const Header = ({logo, navigation, contactButton}) => {
                         </a>
                     ))}
                 </nav>
-
                 <button className={style.contactButton}>
                     {contactButton.text}
                 </button>
